@@ -1,3 +1,7 @@
+# React Shell Game
+
+A Shell game made with React, Typescript, Context and Hooks
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

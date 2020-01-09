@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React Shell Game",
+  "name": "A Shell game made with React, Typescript, Context and Hooks",
   "icons": [
     {
       "src": "favicon.ico",
