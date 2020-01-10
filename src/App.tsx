@@ -1,7 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import Board from "./containers/Board";
+
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App: React.FC = () => {
   return (
