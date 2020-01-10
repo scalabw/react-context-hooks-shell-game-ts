@@ -7,9 +7,16 @@ const Board: React.FC = () => {
   return (
     <>
       <Header />
-      <Cup />
-      <Cup />
-      <Cup />
+      <div className="Inline">
+        <Cup />
+      </div>
+      <div className="Inline">
+        <Cup />
+      </div>
+      <div className="Inline">
+        <Cup />
+      </div>
+
       <Ball />
     </>
   );
