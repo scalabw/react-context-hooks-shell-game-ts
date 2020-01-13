@@ -1,10 +1,17 @@
 import React from "react";
 
-const Score: React.FC = props => (
-  <>
-    <h4>Score: </h4>
-    <p>{}</p>
-  </>
-);
+interface IProps {
+  score: number;
+}
+
+const Score = (props: IProps) => {
+  const { score } = props;
+  return (
+    <>
+      <h4>Score: </h4>
+      <p>{score}</p>
+    </>
+  );
+};
 
 export default Score;

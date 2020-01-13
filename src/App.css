@@ -5,5 +5,18 @@
   text-align: center;
 }
 .Ball {
-  width: 3%;
+  width: 30%;
+  top: 60%;
+  left: 35%;
+  position: absolute;
+  z-index: -1;
+}
+
+.Cup {
+  position: absolute;
+  width: 90%;
+}
+
+.Container {
+  position: relative;
 }
