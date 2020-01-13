@@ -25,6 +25,7 @@ const Board: React.FC = () => {
         <div
           className="Inline mr-2 Container"
           onClick={() => checkBallPosition(index)}
+          key={index}
         >
           <Cup />
           {ballPosition === index && <Ball />}
@@ -34,7 +35,6 @@ const Board: React.FC = () => {
     setBoard(Board);
   }, [score, ballPosition]);
 
-  console.log(board);
   return (
     <>
       <Header />
