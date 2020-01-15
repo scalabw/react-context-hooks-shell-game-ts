@@ -1,3 +1,3 @@
-export const getRandomInt = (max: number) => {
-  return Math.floor(Math.random() * Math.floor(max));
-};
+// Generate a random Number in a given range
+export const getRandomNumberInRange = (max: number) =>
+  Math.floor(Math.random() * Math.floor(max));
