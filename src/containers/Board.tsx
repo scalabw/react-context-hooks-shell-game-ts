@@ -9,10 +9,14 @@ import { cupsNumber } from "../constants/Cups";
 const Board: React.FC = () => {
   const [score, setScore] = useState(0);
   const [board, setBoard] = useState([] as JSX.Element[]);
-
   // generate randomly the first Ball position
-  const ballPosition = getRandomNumberInRange(cupsNumber);
+  const [ballPosition, setBallPosition] = useState(
+    getRandomNumberInRange(cupsNumber)
+  );
 
+  const randomizeBallPosition = () => {
+    setBallPosition(getRandomNumberInRange(cupsNumber));
+  };
   useEffect(() => {
     // check if the user Clicked on the Good cup
     const checkBallPosition = (position: number) => {
@@ -22,6 +26,12 @@ const Board: React.FC = () => {
       }
     };
 
+    // Randomize the ball position
+    const randomizeBallPosition = () => {
+      setBallPosition(getRandomNumberInRange(cupsNumber));
+    };
+
+    randomizeBallPosition();
     // Generate the Board with the Defined number of Cups and put the Ball inside one of them
     const Board: JSX.Element[] = [];
     for (let index = 0; index < cupsNumber; index++) {
@@ -39,6 +49,7 @@ const Board: React.FC = () => {
     setBoard(Board);
   }, [score, ballPosition]);
 
+  console.log(ballPosition);
   return (
     <>
       <Header />
