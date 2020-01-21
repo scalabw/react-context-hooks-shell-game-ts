@@ -41,7 +41,9 @@ const Board: React.FC = () => {
           onClick={() => checkBallPosition(index)}
           key={index}
         >
-          <Cup />
+          <div className="CupImage">
+            <Cup />
+          </div>
           {ballPosition === index && <Ball />}
         </div>
       );
